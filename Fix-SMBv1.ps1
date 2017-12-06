@@ -19,16 +19,6 @@ Param(
     [String[]]$ComputerName
 )
 
-#Import AD Module
-Import-Module ActiveDirectory
-
-#If $ComputerName filter fails or returns no results
-if(!($ComputerName)) {
-
-    Write-Host -ForegroundColor Yellow "$ComputerName value returned NULL; breaking from script."
-    Break
-}
-
 function Crypto-Fix-W7-2008 {
 
 #Add desired registry key values to array
