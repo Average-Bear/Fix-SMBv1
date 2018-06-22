@@ -15,7 +15,7 @@ Function Crypto-Fix-W10-2012 will fail if PowerShell is out of date or cmdlets a
 Param(
 
     #To set default value, change mandatory to ValueFromPipeline and make $ComputerName = whatever command to pull a list
-    [parameter(Mandatory=$true)]
+    [Parameter(Mandatory=$true)]
     [String[]]$ComputerName
 )
 
